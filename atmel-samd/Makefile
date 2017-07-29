@@ -197,8 +197,10 @@ SRC_C = \
 	shared_dma.c \
 	rgb_led_status.c \
 	tick.c \
+	sleepydog.c \
 	$(FLASH_IMPL) \
 	bindings/samd/__init__.c \
+	bindings/sleepydog/__init__.c \
 	asf/common/services/sleepmgr/samd/sleepmgr.c \
 	asf/common/services/storage/ctrl_access/ctrl_access.c  \
 	asf/common/services/usb/class/cdc/device/udi_cdc.c \

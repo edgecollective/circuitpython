@@ -155,6 +155,8 @@ extern const struct _mp_obj_module_t ustack_module;
 extern const struct _mp_obj_module_t samd_module;
 extern const struct _mp_obj_module_t touchio_module;
 extern const struct _mp_obj_module_t usb_hid_module;
+//EdgeCollective
+extern const struct _mp_obj_module_t sleepydog_module;
 
 // Internal flash size dependent settings.
 #if BOARD_FLASH_SIZE > 192000
@@ -170,7 +172,8 @@ extern const struct _mp_obj_module_t usb_hid_module;
         { MP_OBJ_NEW_QSTR(MP_QSTR_audioio), (mp_obj_t)&audioio_module }, \
         { MP_OBJ_NEW_QSTR(MP_QSTR_audiobusio), (mp_obj_t)&audiobusio_module }, \
         { MP_OBJ_NEW_QSTR(MP_QSTR_pulseio), (mp_obj_t)&pulseio_module }, \
-        { MP_OBJ_NEW_QSTR(MP_QSTR_bitbangio), (mp_obj_t)&bitbangio_module }
+        { MP_OBJ_NEW_QSTR(MP_QSTR_bitbangio), (mp_obj_t)&bitbangio_module }, \
+        { MP_OBJ_NEW_QSTR(MP_QSTR_sleepydog),(mp_obj_t)&sleepydog_module }
     #define EXPRESS_BOARD
 #else
     #define MICROPY_PY_BUILTINS_REVERSED (0)
